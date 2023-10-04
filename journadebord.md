@@ -23,9 +23,8 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean (cela veut dire que le dossier est mis à jour)
 
 Après modification du journal de bord depuis le boutons "commit changes", je vois que les modifications n'ont pas été prises en compte, en effet nous n'avons rien de noté sur le fichier journqldebord (erreur sur le nom, clavier qwerty...) et la correction du nom de fichier n'a pas été prise en compte non plus
-ON confirme ça avec un git status
 
-J'ai testé un pull pour voir ce que ça donne en exécutant la commande suivante : 
+J'ai testé un pull pour voir ce que ça donne en exécutant la commande suivante (un pull car les modifications sont faites sur le journal de bord en ligne) : 
 
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git pull
 Enter passphrase for key '/home/zina/.ssh/id_ed25519': (Mot de passe)
@@ -44,8 +43,8 @@ Fast-forward
  2 files changed, 25 insertions(+), 1 deletion(-)
  create mode 100644 journadebord.md
  delete mode 100644 journqldebord
-
-Je constate que le fichier "journal de bord" a bien été modifié 
+ 
+ Je constate que le fichier "journal de bord" a bien été modifié 
 
 Je lance un "git log" pour voir si les modifications ont bien été prises en compte :
 
