@@ -102,7 +102,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Afin de synchroniser avec mon répertoire git en ligne, je lance un commit puis push cette fois-ci :
 
-
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
 Enter passphrase for key '/home/zina/.ssh/id_ed25519':
 Everything up-to-date
@@ -128,52 +127,15 @@ Changes not staged for commit:
 Le souci, c'était finalement qu'il n'y avait pas eu de nom sur le commit, il y avait d'ailleurs le message suivant lors de mon "git commit" :
 Aborting commit due to empty commit message.
 
-Suite à cela, j'ai refait, le commit et push et les modifications ont été synchronisées :
+Suite à cela, j'ai refait le commit et push et les modifications ont été synchronisées :
 
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git commit
 [main b76e8de] un commit avant pus
  1 file changed, 34 insertions(+), 4 deletions(-)
 
-zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
-Enter passphrase for key '/home/zina/.ssh/id_ed25519':
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 12 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 804 bytes | 804.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To github.com:Zina-Charikh/PPE1-2023.git
-   49d69f6..b76e8de  main -> main
 
-zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git commit
-[main b76e8de] un commit avant pus
- 1 file changed, 34 insertions(+), 4 deletions(-)
-zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
-Enter passphrase for key '/home/zina/.ssh/id_ed25519':
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 12 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 804 bytes | 804.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To github.com:Zina-Charikh/PPE1-2023.git
-   49d69f6..b76e8de  main -> main
+Là, je veux taguer cette version pour cela je dois faire un commit puis un tag comme suit:
 
-
-
-zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git commit -m "modif push"
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   journadebord.md
-
-no changes added to commit (use "git add" and/or "git commit -a")
-zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git add journadebord.md
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git commit -m "modif push"
 [main 8a26cde] modif push
  1 file changed, 23 insertions(+), 1 deletion(-)
@@ -193,3 +155,4 @@ To github.com:Zina-Charikh/PPE1-2023.git
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git tag seance2
 et je vais excécuter :
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push origin seance2
+
