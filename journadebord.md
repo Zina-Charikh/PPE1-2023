@@ -101,7 +101,9 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 
-AFin de synchroniser avec mon répertoire git en ligne, je lance un push cette fois-ci :
+AFin de synchroniser avec mon répertoire git en ligne, je lance un commit puis push cette fois-ci :
+
+
 
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
 Enter passphrase for key '/home/zina/.ssh/id_ed25519':
@@ -125,4 +127,24 @@ Changes not staged for commit:
         modified:   journadebord.md
 
 
+Le souci, c'était finalement qu'il n'y avait pas eu de nom sur le commit, il y avait d'ailleurs le message suivant lors de mon "git commit" :
+Aborting commit due to empty commit message.
+
+Suite à cela, j'ai refait, le commit et push et les modifications ont été synchronisées :
+
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git commit
+[main b76e8de] un commit avant pus
+ 1 file changed, 34 insertions(+), 4 deletions(-)
+
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
+Enter passphrase for key '/home/zina/.ssh/id_ed25519':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 804 bytes | 804.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Zina-Charikh/PPE1-2023.git
+   49d69f6..b76e8de  main -> main
 
