@@ -83,16 +83,46 @@ Date:   Tue Sep 26 20:36:42 2023 +0100
 
     Initial commit
 
-On voit q'une nouvelle version a été citée par rapport à la dernière fois que j'ai lancé la commande.
-Je lance une nouvelle fois encore un "git status": 
+On voit qu'une nouvelle version a été citée par rapport à la dernière fois que j'ai lancé la commande.
+
+Désormais, je vais faire mes modificatons sur le répertoire présent sur ma machine, et plutôt lancer des push par la suite
+
+Et là je lance un "git status" et je vois qu'il y a bien des modifications :
+
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
-nothing to commit, working tree clean
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   journadebord.md
 
-Ainsi, je vois que mon dossier est synchronisé par rapport à mon dépot en ligne.
+no changes added to commit (use "git add" and/or "git commit -a")
 
+
+AFin de synchroniser avec mon répertoire git en ligne, je lance un push cette fois-ci :
+
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
+Enter passphrase for key '/home/zina/.ssh/id_ed25519':
+Everything up-to-date
+
+
+Cependanrt, quand je m'assure que les modifications ont été prises en compte sur le git, je constate que ce n'est pas le cas
+
+Je lance une nouvelle fois encore un "git status":
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   journadebord.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   journadebord.md
 
 
 
