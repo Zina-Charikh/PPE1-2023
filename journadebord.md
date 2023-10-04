@@ -1,6 +1,6 @@
 # Journal de bord du projet encadré
 
-Le dépôt git a bien cloné sur la machine (sur mon dosssier PPE) :
+Le dépôt git a bien été cloné sur la machine (sur mon dosssier PPE) :
 J'ai copié le lien SSH depuis le bouton code et exécuté la commande : 
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE$ git clone git@github.com:Zina-Charikh/PPE1-2023.git
 Résultat : 
@@ -22,7 +22,7 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean (cela veut dire que le dossier est mis à jour)
 
-Après modification du journal de bord depuis le boutons "commit changes", je vois que les modifications n'ont pas été prises en compte, en effet nous n'avons rien de noté sur le fichier journqldebord (erreur sur le nom, clavier qwerty...) et la correction du nom de fichier n'a pas été prise en compte non plus
+Après modification du journal de bord depuis le boutons "commit changes" (en ligne), je vois que les modifications n'ont pas été prises en compte, en effet nous n'avons rien de noté sur le fichier journqldebord (erreur sur le nom, clavier qwerty...) et la correction du nom de fichier n'a pas été prise en compte non plus
 
 J'ai testé un pull pour voir ce que ça donne en exécutant la commande suivante (un pull car les modifications sont faites sur le journal de bord en ligne) : 
 
@@ -85,7 +85,7 @@ Date:   Tue Sep 26 20:36:42 2023 +0100
 
 On voit qu'une nouvelle version a été citée par rapport à la dernière fois que j'ai lancé la commande.
 
-Désormais, je vais faire mes modificatons sur le répertoire présent sur ma machine, et plutôt lancer des push par la suite
+# Désormais, je vais faire mes modificatons sur le répertoire présent sur ma machine, et plutôt lancer des push par la suite
 
 Et là je lance un "git status" et je vois qu'il y a bien des modifications :
 
@@ -100,9 +100,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-
-AFin de synchroniser avec mon répertoire git en ligne, je lance un commit puis push cette fois-ci :
-
+Afin de synchroniser avec mon répertoire git en ligne, je lance un commit puis push cette fois-ci :
 
 
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
@@ -110,7 +108,7 @@ Enter passphrase for key '/home/zina/.ssh/id_ed25519':
 Everything up-to-date
 
 
-Cependanrt, quand je m'assure que les modifications ont été prises en compte sur le git, je constate que ce n'est pas le cas
+Cependant, quand je m'assure que les modifications ont été prises en compte sur le git, je constate que ce n'est pas le cas
 
 Je lance une nouvelle fois encore un "git status":
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git status
@@ -148,3 +146,50 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:Zina-Charikh/PPE1-2023.git
    49d69f6..b76e8de  main -> main
 
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git commit
+[main b76e8de] un commit avant pus
+ 1 file changed, 34 insertions(+), 4 deletions(-)
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
+Enter passphrase for key '/home/zina/.ssh/id_ed25519':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 804 bytes | 804.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Zina-Charikh/PPE1-2023.git
+   49d69f6..b76e8de  main -> main
+
+
+
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git commit -m "modif push"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   journadebord.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git add journadebord.md
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git commit -m "modif push"
+[main 8a26cde] modif push
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push
+Enter passphrase for key '/home/zina/.ssh/id_ed25519':
+Enter passphrase for key '/home/zina/.ssh/id_ed25519':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 775 bytes | 775.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Zina-Charikh/PPE1-2023.git
+   b76e8de..8a26cde  main -> main
+
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git tag seance2
+et je vais excécuter :
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push origin seance2
