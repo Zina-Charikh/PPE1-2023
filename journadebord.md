@@ -22,8 +22,10 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean (cela veut dire que le dossier est mis à jour)
 
+Après modification du journal de bord depuis le boutons "commit changes", je vois que les modifications n'ont pas été prises en compte, en effet nous n'avons rien de noté sur le fichier journqldebord (erreur sur le nom, clavier qwerty...) et la correction du nom de fichier n'a pas été prise en compte non plus
+ON confirme ça avec un git status
 
-J'ai testé un push pour voir ce que ça donne en exécutant la commande suivante : 
+J'ai testé un pull pour voir ce que ça donne en exécutant la commande suivante : 
 
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git pull
 Enter passphrase for key '/home/zina/.ssh/id_ed25519': (Mot de passe)
@@ -44,4 +46,54 @@ Fast-forward
  delete mode 100644 journqldebord
 
 Je constate que le fichier "journal de bord" a bien été modifié 
+
+Je lance un "git log" pour voir si les modifications ont bien été prises en compte :
+
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git log
+commit bd83c0c0893d7040efd7163f076a441a4d558fa0 (HEAD -> main, origin/main, origin/HEAD)
+Author: Zina-Charikh <145554773+Zina-Charikh@users.noreply.github.com>
+Date:   Wed Oct 4 09:37:14 2023 +0200
+
+    Update journadebord.md
+    
+    Premi<C3><A8>re partie de la s<C3><A9>rie TP
+
+commit e61e672b69bd48515c2ade1cdaa53da815c10441
+Author: Zina-Charikh <145554773+Zina-Charikh@users.noreply.github.com>
+Date:   Wed Oct 4 09:28:12 2023 +0200
+
+    Update and rename journqldebord to journadebord.md
+    
+    Ajout du journal de bord
+
+commit 96ad926acb4e962d93816272e29986356d53fcc3
+Author: Zina-Charikh <145554773+Zina-Charikh@users.noreply.github.com>
+Date:   Wed Sep 27 09:21:22 2023 +0200
+
+    Rename Journal de bord to journaldebord
+
+commit b5f57ab38fdc67b95914d3cc15199bb313cb7cea
+Author: Zina-Charikh <145554773+Zina-Charikh@users.noreply.github.com>
+Date:   Tue Sep 26 20:43:56 2023 +0100
+
+    Create Journal de bord
+
+commit 01cec628b85b4c1c2d05801d1a539375d5e00ad2
+Author: Zina-Charikh <145554773+Zina-Charikh@users.noreply.github.com>
+Date:   Tue Sep 26 20:36:42 2023 +0100
+
+    Initial commit
+
+On voit q'une nouvelle version a été citée par rapport à la dernière fois que j'ai lancé la commande.
+Je lance une nouvelle fois encore un "git status": 
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Ainsi, je vois que mon dossier est synchronisé par rapport à mon dépot en ligne.
+
+
+
 
