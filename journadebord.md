@@ -23,3 +23,25 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean (cela veut dire que le dossier est mis à jour)
 
 
+J'ai testé un push pour voir ce que ça donne en exécutant la commande suivante : 
+
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git pull
+Enter passphrase for key '/home/zina/.ssh/id_ed25519': (Mot de passe)
+
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.97 KiB | 288.00 KiB/s, done.
+From github.com:Zina-Charikh/PPE1-2023
+   96ad926..bd83c0c  main       -> origin/main
+Updating 96ad926..bd83c0c
+Fast-forward
+ journadebord.md | 25 +++++++++++++++++++++++++
+ journqldebord   |  1 -
+ 2 files changed, 25 insertions(+), 1 deletion(-)
+ create mode 100644 journadebord.md
+ delete mode 100644 journqldebord
+
+Je constate que le fichier "journal de bord" a bien été modifié 
+
