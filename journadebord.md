@@ -152,7 +152,10 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:Zina-Charikh/PPE1-2023.git
    b76e8de..8a26cde  main -> main
 
-zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git tag seance2
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git tag Seance2
 et je vais excécuter :
-zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push origin seance2
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push origin Seance2
+
+# GIt 2
+- exercice 1 :
 
