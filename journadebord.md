@@ -156,6 +156,6 @@ zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation 
 et je vais excécuter :
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push origin Seance2
 
-# séance 3 : GIt 2
+# GIt 2
 - exercice 1 :
 
