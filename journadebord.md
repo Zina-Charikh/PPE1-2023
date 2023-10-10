@@ -156,6 +156,22 @@ zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation 
 et je vais excécuter :
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push origin Seance2
 
-# GIt 2
-- exercice 1 :
+# GIt 2 : séance 3
+- Exercice 1.b
+Pour récupérer l’identifiant SHA du commit : git log (ou -1 si on souhaite avoir uniquement le dernier commit) Pour défaire le
+commit : git revert (commit étant l'identifiant SHA) Dans notre cas : git revert ef7f4b9bfda525b55c44e34560458865b025b766
+
+Exercice 2
+Commit sur le fichier Oups, ensuite la commande : git reset ef7f4b9bfda525b55c44e34560458865b025b766
+Suppression du fichier oups, puis commit
+Je n'arrive pas à faire de push après cette modification, j'ai le message d'erreur suivant car arborescence différence avec le dépôt en ligne :
+
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:Zina-Charikh/PPE1-2023.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+J'ai tenté un revert pour y remédier mais ça ne marche pas
 
