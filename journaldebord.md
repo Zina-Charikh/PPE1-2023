@@ -216,3 +216,22 @@ Même chose pour persones, dateset organisations :
 cat *_10_*.ann | grep Person | cut -f 3 | sort | uniq -c | sort | tail
 cat *_10_*.ann | grep Date | cut -f 3 | sort | uniq -c | sort | tail
 cat *_10_*.ann | grep Organization | cut -f 3 | sort | uniq -c | sort | tail
+
+
+
+6.  écrire un script qui donne le nombre de Location par année :
+VOici le contenu du script :
+---------------------
+#!/bin/bash
+echo "Hello World"
+
+resultat=$(cat *2016*.ann | grep Location | cut -f 3 | sort | uniq -c | sort)
+echo -e "$resultat"
+----------------------
+
+Je n'ai pas su comment faire en sorte que l'année soit saisie en argument
+
+- Commande pour rendre le fichier exécutable : chmod +x premierscript.sh
+- Commande pour exécuter le script ./premierscript.sh
+
+
