@@ -178,4 +178,41 @@ J'ai donc modifié sur le journal du répertoir distant, mais les dernières mod
 
 Vu avec le prof qui m'a recommandé de re-clôner 
 
+# séance 4
 
+1. Compter le nombre d’annotations par année (ex. année 2016) : cat *2016*.ann | sort | uniq -c
+2. Limiter ce comptage aux lieux (Location) : cat *2016*.ann | grep Location | cut -f 3 | sort | uniq -c
+3. Pour sauvegarder les résultats dans un fichier : cat *2016*.ann | grep Location | cut -f 3 | head -n 20 | sort | uniq -c > fichier.txt
+La sortie de la commande précédente sera donc sauvegardée dans le fichier fichier.txt.
+Note : Si on souhaite juste ajouter les résultats à la fin d'un fichier qui existe déjà, on utilise >> à la place de >
+4. établir le classement des lieux les plus cités : cat *2016*.ann | grep Location | cut -f 3 | sort | uniq -c | sort | tail
+La commande tail affiche les dernières lignes d'un fichier. Dans ce cas, tail est utilisé pour afficher les dernières lignes de la sortie (liste des lieux triés du moins cité au plus cité), ce qui signifie qu'il affiche les lignes avec les comptages les plus élevés. Ainsi, nous aurons :
+
+     35 Montpellier
+     37 Canada
+     39 Allemagne
+     41 Russie
+     47 Syrie
+     73 États-Unis
+     82 Paris
+    105 Rio
+    130 Burundi
+    247 France
+
+5. Trouver les annotations les plus fréquentes pour votre mois de naissance, toutes années confondues (octobre/10)
+Pour les lieux : cat *_10_*.ann | grep Location | cut -f 3 | sort | uniq -c | sort | tail
+      8 Paris
+      8 Québec
+      8 Ukraine
+      9 Rome
+     10 Catalogne
+     10 Russie
+     10 États-Unis
+     13 Bujumbura
+     30 France
+     73 Burundi
+
+Même chose pour persones, dateset organisations :
+cat *_10_*.ann | grep Person | cut -f 3 | sort | uniq -c | sort | tail
+cat *_10_*.ann | grep Date | cut -f 3 | sort | uniq -c | sort | tail
+cat *_10_*.ann | grep Organization | cut -f 3 | sort | uniq -c | sort | tail
