@@ -173,5 +173,9 @@ hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-J'ai tenté un revert pour y remédier mais ça ne marche pas
+J'ai essayé de résoudre avec un reset/revert, en supprimant le fichier de trop sur le répertoir distant puis avec un pull, mais ça ne marche pas, j'ai toujoiurs le message d'erreur.
+J'ai donc modifié sur le journal du répertoir distant, mais les dernières modifications sur le fichier n'ont pas été inclues dans le tag que j'ai fait (pour la séance 3)
+
+Vu avec le prof qui m'a recommandé de re-clôner 
+
 
