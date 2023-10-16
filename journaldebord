@@ -235,7 +235,7 @@ Je n'ai pas su comment faire en sorte que l'année soit saisie en argument
 
 7. Exercice 1 :
 a. Écrire un script qui compte les entités pour une année un type d’entité donnés en argument du programme : je n'ai pas compris la question
-b.  Écrire un second script qui lance le script précédent trois fois, une fois pour chaque années, en prenant le type d’entité en argument : Je ne sais pas comment faire passer des paramètres
+b.  Écrire un second script qui lance le script précédent trois fois, une fois pour chaque années, en prenant le type d’entité en argument : Je ne sais pas comment faire passer des paramètres/arguments
 
 
 8. Exercice 2 :
@@ -256,3 +256,5 @@ zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation 
     189 États-Unis
     295 Paris
     702 France
+
+Je n'ai pas pu faire le reste car je ne sais pas écrire des scrips en faisant passer des paramètres/arguments
