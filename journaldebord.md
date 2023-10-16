@@ -218,7 +218,6 @@ cat *_10_*.ann | grep Date | cut -f 3 | sort | uniq -c | sort | tail
 cat *_10_*.ann | grep Organization | cut -f 3 | sort | uniq -c | sort | tail
 
 
-
 6.  écrire un script qui donne le nombre de Location par année :
 VOici le contenu du script :
 ---------------------
@@ -234,4 +233,26 @@ Je n'ai pas su comment faire en sorte que l'année soit saisie en argument
 - Commande pour rendre le fichier exécutable : chmod +x premierscript.sh
 - Commande pour exécuter le script ./premierscript.sh
 
+7. Exercice 1 :
+a. Écrire un script qui compte les entités pour une année un type d’entité donnés en argument du programme : je n'ai pas compris la question
+b.  Écrire un second script qui lance le script précédent trois fois, une fois pour chaque années, en prenant le type d’entité en argument : Je ne sais pas comment faire passer des paramètres
 
+
+8. Exercice 2 :
+a.  créer un script pour établir le classement des lieux les plus cités :
+#!/bin/bash
+resultat=$(cat *.ann | grep Location | cut -f 3 | sort | uniq -c | sort | tail)
+echo -e "$resultat"
+
+On obtient :
+zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/Fichiers$ ./premierscript.sh
+     76 Turquie
+     77 Allemagne
+     83 Italie
+     97 Syrie
+    106 Rio
+    113 Russie
+    139 Burundi
+    189 États-Unis
+    295 Paris
+    702 France
