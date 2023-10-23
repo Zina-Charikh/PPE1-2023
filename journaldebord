@@ -65,7 +65,7 @@ zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation 
 et je vais excécuter :
 zina@zina-HP-Pavilion-Laptop-15-eh1xxx:/media/zina/Commun/Studies/Programmation et projet encadrM-CM-) PPE/PPE1-2023$ git push origin Seance2
 
-# GIt 2 : séance 3
+# Séance 3
 - Exercice 1.b
 Pour récupérer l’identifiant SHA du commit : git log (ou -1 si on souhaite avoir uniquement le dernier commit) Pour défaire le
 commit : git revert (commit étant l'identifiant SHA) Dans notre cas : git revert ef7f4b9bfda525b55c44e34560458865b025b766
@@ -134,22 +134,15 @@ cat *_10_*.ann | grep Date | cut -f 3 | sort | uniq -c | sort | tail
 cat *_10_*.ann | grep Organization | cut -f 3 | sort | uniq -c | sort | tail
 
 
-6.  écrire un script qui donne le nombre de Location par année :
-VOici le contenu du script :
----------------------
-#!/bin/bash
-echo "Hello World"
-
-resultat=$(cat *2016*.ann | grep Location | cut -f 3 | sort | uniq -c | sort)
-echo -e "$resultat"
-----------------------
-
+6.  écrire un script qui donne le nombre de Location par année : premierscript.sh
 - Commande pour rendre le fichier exécutable : chmod +x premierscript.sh
 - Commande pour exécuter le script ./premierscript.sh
 
 7. Exercice 1 :
-a. Écrire un script qui compte les entités pour une année un type d’entité donnés en argument du programme
-b.  Écrire un second script qui lance le script précédent trois fois, une fois pour chaque années, en prenant le type d’entité en argument :
+a. copier le premier script et le modifier pour que l’année et le type d’entité soient donnés en argument du programme : S4exo1.sh
+b. modifier le premier script pour qu’il appelle le second afin de produire le même résultat. S4exo1_2
 
 8. Exercice 2 :
-a.  créer un script pour établir le classement des lieux les plus cités :
+a. créer un script pour établir le classement des lieux les plus cités : S4exo2.sh
+b. prendre en argument l’année, le mois et le nombre de lieux à afficher S4exo2_2.sh
+c. accepter * pour l’année et le mois : S4exo2_3.sh
