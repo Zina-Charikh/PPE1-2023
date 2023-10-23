@@ -146,3 +146,9 @@ b. modifier le premier script pour qu’il appelle le second afin de produire le
 a. créer un script pour établir le classement des lieux les plus cités : S4exo2.sh
 b. prendre en argument l’année, le mois et le nombre de lieux à afficher S4exo2_2.sh
 c. accepter * pour l’année et le mois : S4exo2_3.sh
+
+
+#Séance5
+Reprendre les scripts de la semaine dernière et ajouter la validation des arguments.
+J'ai refait les script contenant au moins un argument en ajoutant une condition sur le nombre d'arguments avec un message d'erreur si elle n'est pas satisfaite
+S5exo1.sh  - S5exo1_2.sh - S5exo2_2.sh - S5exo2_3.sh
