@@ -161,6 +161,9 @@ Pourquoi ne pas utiliser cat ?
 Pour exécuter ce script (miniprojet), il suffit de donner les permissions d'exécution (avec "chmod +x miniprojet.sh") et de l'exécuter avec ./miniprojet.sh
 Dans ce cas, nous avons un script bash, le but est de l'exécuter et non lire le contenu.
 
+Dans notre cas, voici la commande pour exécuter le fichier miniprojet.sh en prenant le fichier fr.txt en paramètre :
+./miniprojet.sh ../urls/fr.txt
+
 - Concernant, la correction des erreurs dans les réponses HTTP :
 Je ne sais pas comment on doit corriger les erreurs, j'ai pensé à ajouter des condition lorsque le code HTTP est différent de 200 (par exemple si codehttp=400: écrire "erreur client")
 mais je ne sais pas quelle condition mettre exactement pour récupérerle nombre exact (200,300,400...), j'imagine qu'on doit utiliser le curl + expression régulière
