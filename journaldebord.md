@@ -148,37 +148,21 @@ b. prendre en argument l’année, le mois et le nombre de lieux à afficher S4e
 c. accepter * pour l’année et le mois : S4exo2_3.sh
 
 
-#Séance5
+# Séance5
 Reprendre les scripts de la semaine dernière et ajouter la validation des arguments.
 J'ai refait les script contenant au moins un argument en ajoutant une condition sur le nombre d'arguments avec un message d'erreur si elle n'est pas satisfaite
 S5exo1.sh  - S5exo1_2.sh - S5exo2_2.sh - S5exo2_3.sh
 
 
-#Séance6
-Exo 1 :
+# Séance6
+
 Pourquoi ne pas utiliser cat ?
+- cat permet uniquement de lire/afficher le contenu d'un fichier texte, et non pas exécuter un script
+Pour exécuter ce script (miniprojet), il suffit de donner les permissions d'exécution (avec "chmod +x miniprojet.sh") et de l'exécuter avec ./miniprojet.sh
+Dans ce cas, nous avons un script bash, le but est de l'exécuter et non lire le contenu.
 
-- cat permet de lire le contenu d'un fichier, et non pas exécuter un code
-Dans ce cas, nous avons un script bash, le but etant de l'exécuter et non lire le contenu, il est préférable de l'exécuter des deux manières suivantes :
-./.....
-bash
-
-
-
-Comment transformer "urls/fr.txt" en paramètre du script ?
-2.1 S’assurer qu’on donne bien un argument au script, sinon on s’arrête
-
-
-3. Comment afficher le numéro de ligne avant chaque URL (sur la même ligne) ?
-• Bien séparer les valeurs par des tabulations
-
-
-
-Après l’exercice 1 fait, on va rajouter des informations à chaque ligne, toujours
-séparées par des tabulations :
-1. le code HTTP de réponse à la requête
-1.1 certaines erreurs peuvent être corrigées
-2. l’encodage de la page, s’il est présent
-
+- Concernant, la correction des erreurs dans les réponses HTTP :
+Je ne sais pas comment on doit corriger les erreurs, j'ai pensé à ajouter des condition lorsque le code HTTP est différent de 200 (par exemple si codehttp=400: écrire "erreur client")
+mais je ne sais pas quelle condition mettre exactement pour récupérerle nombre exact (200,300,400...), j'imagine qu'on doit utiliser le curl + expression régulière
 
 
