@@ -180,3 +180,6 @@ La ligne com="<pre>$commande</pre>" sert à récupérer sortie du script minipro
 2. Un fichier .html contenant les balises basiques pour créer un tableau de façon manuelle, c'est-à-dire :
 (<table><tr><td> et leurs balises fermantes bien sûr), dans cette méthode rien ne se fait de façon automatique.
 
+Les 3 autres exercices dans la fiche d'exercices supplémentaires : dans le dossier exercices/seance 7
+
+
