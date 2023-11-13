@@ -169,3 +169,14 @@ Je ne sais pas comment on doit corriger les erreurs, j'ai pensé à ajouter des 
 mais je ne sais pas quelle condition mettre exactement pour récupérerle nombre exact (200,300,400...), j'imagine qu'on doit utiliser le curl + expression régulière
 
 
+# Séance 7
+J'ai pris beaucoup de temps à essayer d'étendre ma partition linux, ça n'a rien donné, j'ai donc dû supprimer toutes les partitions liées à Kubuntu et réinstaller par la suite (toujours en dual boot) 
+
+Afin de  transformer la sortie tabulaire au format HTML, j'ai procédé par différentes façons :
+
+1. UN script "commande.sh" qui exécute la commande ./miniprojet.sh ../urls/fr.txt et affiche le résultat sur la page commande.html (qui se crée après exécution).
+La ligne com="<pre>$commande</pre>" sert à récupérer sortie du script miniprojet.sh (stockée dans la variable $commande) dans un format préformaté.
+
+2. Un fichier .html contenant les balises basiques pour créer un tableau de façon manuelle, c'est-à-dire :
+(<table><tr><td> et leurs balises fermantes bien sûr), dans cette méthode rien ne se fait de façon automatique.
+

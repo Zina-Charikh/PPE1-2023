@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-fichier=$1
+
+URLS=$1
 lineno=1;
 
 #S’assurer qu’on donne bien un argument au script, sinon on s’arrête
@@ -9,20 +10,13 @@ then
 	echo "Aucun fichier saisi, veuillez saisir un chemin";
 	exit;
 fi
+#!/usr/bin/env bash
 
-while read -r line;
+while read -r URL
 do
-	#compteur
+	reponse=$(curl -s -I -L -w "%{http_code}" -o /dev/null $URL)
+	encoding=$(curl -s -I -L -w "%{content_type}" -o /dev/null $URL | grep -P -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
+	echo -e "$lineno\t$URL\t$reponse\t$encoding"
 	lineno=$(expr $lineno + 1)
-
-	#code HTTP de réponse à la requête
-	http=$(curl -I ${line})
-
-	#l’encodage de la page
-	encodage=$(curl -s ${line} | grep "<meta" | head -1)
-
-	#afficher le numéro de ligne avant chaque URL
-	echo -e "${lineno}\t${line}\t${http}\t${encodage}";
-
-done < "$fichier"
+done < "$URLS"
 
